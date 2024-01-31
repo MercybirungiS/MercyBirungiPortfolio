@@ -1,13 +1,13 @@
 ---
-title: Antriksh Global
-workUrl: https://www.antrikshglobal.com
-description: "A Company based in Pune with Video Audio Expertise and also having expertise in other domains like IT and Software"
+title: Ersillia OpenSource
+workUrl: https://github.com/ersilia-os/ersilia/issues/838
+description: "Created Machine Learning Models For Medical Research"
 tags:
   - work
-  - html
-  - css
-  - javascript
-image: /img/work/5.webp
-imageAlt: Antriksh Global
+  - python
+  - conda
+  - data science
+image: /img/work/ersillia.png
+imageAlt: Ersillia
 permalink: false
 ---

@@ -1,13 +1,12 @@
 ---
-title: UI UX Design School
-workUrl: https://uiuxdesignschool.in
-description: "UI UX Design School is a website designed for an Edtech Startup based in Pune"
+title: LastMinute Ambulance 
+workUrl: https://github.com/MercybirungiS/LastMinute
+description: ""
 tags:
   - work
-  - html
-  - css
-  - javascript
-image: /img/work/1.webp
-imageAlt: UI UX Design School
+  - Flutter
+ 
+image: /img/work/lastminuteapp.png
+imageAlt: Last minute app
 permalink: false
 ---

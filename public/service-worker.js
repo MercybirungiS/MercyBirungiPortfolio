@@ -639,6 +639,10 @@ self.__precacheManifest = [
     "revision": "669a40e4c8ddcaac3f6a9ec5c6e3eb3f"
   },
   {
+    "url": "img/work/24537Zoom-EDA.png",
+    "revision": "016ab497fb3bd941da7c2695523f57ce"
+  },
+  {
     "url": "img/work/3.jpg",
     "revision": "97d2dc7000e1db6e9b26c0c099f6b8a9"
   },
@@ -671,8 +675,28 @@ self.__precacheManifest = [
     "revision": "65837cd204718b870007c10188711f61"
   },
   {
+    "url": "img/work/ersillia.png",
+    "revision": "accfa2bf21433c2982127d90ca188b85"
+  },
+  {
+    "url": "img/work/lastminuteapp.png",
+    "revision": "121cc5f0e5a81acfd5fcb4ba4198d946"
+  },
+  {
+    "url": "img/work/Screenshot from 2024-01-31 14-34-33.png",
+    "revision": "aa760f15da80a9ef3b1b0409bb33fa0e"
+  },
+  {
+    "url": "img/work/Screenshot from 2024-01-31 14-55-16.png",
+    "revision": "accfa2bf21433c2982127d90ca188b85"
+  },
+  {
+    "url": "img/work/springBoot.png",
+    "revision": "d2ba9dfeb7ecf87fdc0dbe311b26f64c"
+  },
+  {
     "url": "index.html",
-    "revision": "20204a8b217ad6fb6af403ade0b0bf26"
+    "revision": "d7d4da152187571aa99a291d8be12c3a"
   },
   {
     "url": "js/script.js",
@@ -684,7 +708,7 @@ self.__precacheManifest = [
   },
   {
     "url": "projects/index.html",
-    "revision": "b23e68d636c26a822b26c13dbdd095c2"
+    "revision": "fcfbe1d50a793d4f751c0f557e3c57ed"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});

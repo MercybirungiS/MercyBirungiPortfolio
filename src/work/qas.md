@@ -1,14 +1,14 @@
 ---
-title: Quick Auto Services
-workUrl: http://www.quickauto.co.in
-description: "QAS is a Two Wheeler Service Center having more than 20 Franchise across India"
+title: YoPas Ticketing CMS
+workUrl: https://yopas.netlify.app/
+description: "This is a ticketing site , a user uploads blogs and tickets on the backend "
 tags:
   - work
-  - wordpress
-  - php
-  - elementor
+  - jamstack
+  - eleventy
+  - javascriot
   - Leaflet.js
-image: /img/work/3.webp
+image: /img/work/Screenshot from 2024-01-31 14-34-33.png
 imageAlt: Quick Auto Services
 permalink: false
 ---

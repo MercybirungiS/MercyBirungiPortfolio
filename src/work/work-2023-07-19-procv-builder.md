@@ -1,11 +1,9 @@
 ---
-title: ProCV Builder
-workUrl: https://procvbuilder.netlify.app/builder
-description: " ProCV Builder, the ultimate tool to create impressive and
-  tailored CVs effortlessly. Whether you're a seasoned professional or just
-  starting your career journey, "
+title: Akatabo Mobile App 
+workUrl: https://rb.gy/7070d8
+description: " This is an online Study Application "
 tags:
   - work
 image: /img/post/pro-cv-builder.png
-imageAlt: ProCV Builder
+imageAlt: Akatabo
 ---
