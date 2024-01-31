@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en" class="default">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+  <!-- Primary Meta Tags -->
+  <title>Add Google Fonts to Your React &amp; NextJS + TailwindCSS Project</title>
+  <meta name="title" content="Add Google Fonts to Your React &amp; NextJS + TailwindCSS Project">
+  <meta name="description" content="Use Google Fonts in Your TailwindCSS Projects">
+  <link rel="canonical" href="https://singhkunal2050.dev/blog/2022-04-06-add-google-fonts-to-your-tailwindcss-project/" />
+  <meta name="keywords" content="post,css,tailwindcss,react,nextjs,tailwind,design">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://singhkunal2050.dev/blog/2022-04-06-add-google-fonts-to-your-tailwindcss-project/">
+  <meta property="og:title" content="Add Google Fonts to Your React &amp; NextJS + TailwindCSS Project">
+  <meta property="og:description" content="Use Google Fonts in Your TailwindCSS Projects">
+  <meta property="og:site_name" content="singhkunal2050" />
+
+  <!-- Twitter -->
+  <meta name="twitter:site" content="@singhkunal2050">
+  <meta name="twitter:creator" content="@singhkunal2050">
+  <meta property="twitter:title" content="Add Google Fonts to Your React &amp; NextJS + TailwindCSS Project">
+  <meta property="twitter:description" content="Use Google Fonts in Your TailwindCSS Projects">
+  <meta property="twitter:card" content="summary">
+  <meta name="twitter:widgets:new-embed-design" content="on">
+  <meta property="twitter:url" content="https://singhkunal2050.dev/blog/2022-04-06-add-google-fonts-to-your-tailwindcss-project/">
+  
+  <meta property="twitter:image" content="https://singhkunal2050.dev/img/post/css-units-cover.jpeg">
+  <meta property="og:image" content="https://singhkunal2050.dev/img/post/css-units-cover.jpeg">
+  <meta name="twitter:image:src" content="https://singhkunal2050.dev/img/post/css-units-cover.jpeg">
+
+
+  <!-- identity -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2BZ17964BK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2BZ17964BK');
+  </script>
+
+  <!-- PWA -->
+  <script>
+    if ("serviceWorker" in navigator)
+      navigator.serviceWorker.register("/js/service-worker.js");
+  </script> 
+</head>
+
+<body>
+
+  <!-- navbar  -->
+
+  <nav>
+    <div class="container">
+
+      <div class="logo">
+        <a style="display: flex; align-items: center;" href=/>
+          
+          <p style="font-size:1.25rem;">mercyBirungi</p>
+        </a>
+      </div>
+
+      <div class="menu">
+        <p> <a href=/> Home </a></p>
+        <p> <a href=/about> About </a></p> 
+        
+        <p> <a href=/projects> Projects </a></p>
+        
+      </div>
+
+      <div class="hamburger">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+      </div>
+
+    </div>
+
+  </nav>
+
+  
+
+	
+<main>
+  <section class="blog-single-hero" style=" background-image: url(/img/post/css-units-cover.jpeg) ">
+    <h1 class="head_text"> 
+      Add Google Fonts to Your React &amp; NextJS + TailwindCSS Project
+     </h1>
+    <h2 class="subhead_text">Kunal Singh</h2>
+    <div class="blog-hashtags">
+      
+      
+          
+          <a href="#">#css</a>
+        
+          ,
+          <a href="#">#tailwindcss</a>
+        
+          ,
+          <a href="#">#react</a>
+        
+          ,
+          <a href="#">#nextjs</a>
+        
+          ,
+          <a href="#">#tailwind</a>
+        
+          ,
+          <a href="#">#design</a>
+        
+    </div>
+    <p style="margin-top: 20px;" class="blog-date rainbow">Apr 6, 2022</p>
+  </section>
+
+  <div class="blog-indicator"> 
+
+  </div>
+
+  <section class="blog-single-container container">
+  
+    <div class="blog-social-share">
+     
+      <div class="share-btn-group">
+        <a href="#" onclick="shareonfb()" > 
+          
+          <svg class="social-svg-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill="white" fill-rule="evenodd" clip-rule="evenodd" d="M0 20.1117C0 30.055 7.22167 38.3233 16.6667 40V25.555H11.6667V20H16.6667V15.555C16.6667 10.555 19.8883 7.77833 24.445 7.77833C25.8883 7.77833 27.445 8 28.8883 8.22167V13.3333H26.3333C23.8883 13.3333 23.3333 14.555 23.3333 16.1117V20H28.6667L27.7783 25.555H23.3333V40C32.7783 38.3233 40 30.0567 40 20.1117C40 9.05 31 0 20 0C9 0 0 9.05 0 20.1117Z" fill="#850505"/>
+          </svg>
+         </a>
+        <a href="#" onclick="shareontwitter()" > 
+          
+          <svg class="social-svg-icon" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill="white" d="M42 8.91999C40.529 9.56437 38.9283 10.0281 37.2794 10.2087C38.9913 9.17596 40.2732 7.54434 40.8847 5.61999C39.2784 6.59041 37.5186 7.27089 35.6834 7.63123C34.9165 6.79855 33.9888 6.1352 32.9583 5.68251C31.9278 5.22982 30.8166 4.9975 29.6938 5.00002C25.1511 5.00002 21.4977 8.73937 21.4977 13.3281C21.4977 13.9725 21.5746 14.6169 21.6996 15.2368C14.8975 14.8756 8.83091 11.5756 4.79774 6.5231C4.06285 7.79777 3.67775 9.24914 3.68249 10.7262C3.68249 13.6161 5.12943 16.1644 7.3359 17.663C6.03559 17.611 4.76574 17.2481 3.62961 16.6037V16.7062C3.62961 20.7531 6.44658 24.1068 10.2009 24.8781C9.49602 25.0641 8.77085 25.1592 8.04254 25.1613C7.50895 25.1613 7.00421 25.1076 6.49465 25.0343C7.53299 28.3343 10.5567 30.7312 14.1572 30.8093C11.3402 33.05 7.8118 34.368 3.98053 34.368C3.29311 34.368 2.65857 34.3436 2 34.2655C5.63418 36.6331 9.94616 38 14.5898 38C29.6649 38 37.914 25.3175 37.914 14.3093C37.914 13.9481 37.914 13.5868 37.8899 13.2256C39.4859 12.0394 40.8847 10.57 42 8.91999Z" fill="white"/>
+          </svg>
+         </a>
+        <a href="#" onclick="shareonlinkedin()" > 
+          
+          <svg class="social-svg-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill="white" d="M34.0819 34.0824H28.1552V24.8007C28.1552 22.5874 28.1156 19.7382 25.0727 19.7382C21.9858 19.7382 21.5134 22.1498 21.5134 24.6396V34.0818H15.5869V14.9949H21.2764V17.6034H21.3561C21.9255 16.6298 22.7483 15.8289 23.7368 15.2859C24.7254 14.7429 25.8428 14.4783 26.9698 14.5201C32.9769 14.5201 34.0844 18.4713 34.0844 23.6117L34.0819 34.0824ZM8.89937 12.386C6.99984 12.3863 5.45969 10.8467 5.45937 8.94713C5.45906 7.0476 6.99859 5.50744 8.89812 5.50713C10.7977 5.50666 12.3378 7.04635 12.3381 8.94588C12.3383 9.85807 11.9761 10.733 11.3312 11.3781C10.6863 12.0233 9.81157 12.3858 8.89937 12.386ZM11.8628 34.0826H5.92984V14.9949H11.8627V34.0824L11.8628 34.0826ZM37.0366 0.00291123H2.95172C1.34078 -0.0152138 0.0196875 1.27525 0 2.88619V37.1132C0.0190625 38.7249 1.34 40.0167 2.95156 39.9998H37.0366C38.6516 40.0198 39.9777 38.7281 40 37.1132V2.88354C39.977 1.26947 38.6508 -0.0208388 37.0366 0.000254983" fill="#850505"/>
+          </svg>
+         </a>
+        <a href="#" onclick="shareonpinterest()" > 
+          
+          <svg class="social-svg-icon" width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill="white" d="M0.00280762 20.0018C0.00280762 28.5401 5.35447 35.8301 12.8861 38.6984C12.7028 37.1368 12.5078 34.5618 12.9278 32.7551C13.2895 31.2018 15.2628 22.8584 15.2628 22.8584C15.2628 22.8584 14.6678 21.6668 14.6678 19.9018C14.6678 17.1351 16.2711 15.0684 18.2695 15.0684C19.9695 15.0684 20.7895 16.3434 20.7895 17.8718C20.7895 19.5801 19.7011 22.1334 19.1395 24.5018C18.6711 26.4834 20.1345 28.1001 22.0878 28.1001C25.6261 28.1001 28.3478 24.3684 28.3478 18.9818C28.3478 14.2134 24.9211 10.8818 20.0295 10.8818C14.3661 10.8818 11.0411 15.1301 11.0411 19.5218C11.0411 21.2334 11.6995 23.0668 12.5228 24.0651C12.593 24.1405 12.6426 24.2327 12.6668 24.3328C12.6911 24.4329 12.6891 24.5376 12.6611 24.6368C12.5095 25.2668 12.1728 26.6184 12.1078 26.8951C12.0195 27.2584 11.8195 27.3368 11.4411 27.1601C8.95447 26.0034 7.40114 22.3684 7.40114 19.4484C7.40114 13.1668 11.9628 7.4001 20.5545 7.4001C27.4611 7.4001 32.8295 12.3218 32.8295 18.8984C32.8295 25.7601 28.5045 31.2834 22.4978 31.2834C20.4795 31.2834 18.5845 30.2334 17.9345 28.9951C17.9345 28.9951 16.9361 32.7984 16.6945 33.7284C16.2245 35.5351 14.9211 37.8218 14.1128 39.1201C15.9761 39.6934 17.9528 40.0018 20.0028 40.0018C31.0478 40.0018 40.0028 31.0468 40.0028 20.0018C40.0028 8.95677 31.0478 0.00177002 20.0028 0.00177002C8.95781 0.00177002 0.00280762 8.95677 0.00280762 20.0018Z" fill="#850505"/>
+          </svg>
+         </a>
+      </div>
+    
+    </div>
+
+    <div class="blog-single-content">
+      
+      <p>Tailwind makes it super easy to use and import google fonts in our projects.</p>
+<h2>Just Follow these 3 steps</h2>
+<ol>
+<li>Get the cdn and insert in the <code>&lt;head&gt;</code> section of the entry point
+file for eg <code>index.html</code>.</li>
+</ol>
+<p><img src="/img/post/google-fonts.png" alt=""></p>
+<p>CDN link can be taken from <a href="https://fonts.google.com/" target="_blank">Google Fonts</a></p>
+<pre class="language-html"><code class="language-html"><span class="token comment">&lt;!-- index.html --></span><br><br><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>icon<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>image/jpg<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>//source.unsplash.com/20x20?smiley<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><br>	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>preconnect<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://fonts.googleapis.com<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>preconnect<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://fonts.gstatic.com<span class="token punctuation">"</span></span> <span class="token attr-name">crossorigin</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&amp;display=swap<span class="token punctuation">"</span></span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>FriendList<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>root<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>module<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/src/main.jsx<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
+<p>For NextJS we need to create a new file <code>_document.js</code> under the <code>pages</code> directory and add the following code Refer <a href="https://nextjs.org/docs/basic-features/font-optimization">https://nextjs.org/docs/basic-features/font-optimization</a></p>
+<pre class="language-jsx"><code class="language-jsx"><span class="token keyword">import</span> Document<span class="token punctuation">,</span> <span class="token punctuation">{</span> Html<span class="token punctuation">,</span> Head<span class="token punctuation">,</span> Main<span class="token punctuation">,</span> NextScript <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"next/document"</span><span class="token punctuation">;</span><br><br><span class="token keyword">class</span> <span class="token class-name">MyDocument</span> <span class="token keyword">extends</span> <span class="token class-name">Document</span> <span class="token punctuation">{</span><br>  <span class="token keyword">static</span> <span class="token keyword">async</span> <span class="token function">getInitialProps</span><span class="token punctuation">(</span><span class="token parameter">ctx</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">const</span> initialProps <span class="token operator">=</span> <span class="token keyword">await</span> Document<span class="token punctuation">.</span><span class="token function">getInitialProps</span><span class="token punctuation">(</span>ctx<span class="token punctuation">)</span><span class="token punctuation">;</span><br>    <span class="token keyword">return</span> <span class="token punctuation">{</span> <span class="token operator">...</span>initialProps <span class="token punctuation">}</span><span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br><br>  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">return</span> <span class="token punctuation">(</span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Html</span></span><span class="token punctuation">></span></span><span class="token plain-text"><br>        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Head</span></span><span class="token punctuation">></span></span><span class="token plain-text"><br>          </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&amp;display=swap<span class="token punctuation">"</span></span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span><span class="token plain-text"><br>        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Head</span></span><span class="token punctuation">></span></span><span class="token plain-text"><br>        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><span class="token plain-text"><br>          </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Main</span></span> <span class="token punctuation">/></span></span><span class="token plain-text"><br>          </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">NextScript</span></span> <span class="token punctuation">/></span></span><span class="token plain-text"><br>        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><span class="token plain-text"><br>      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Html</span></span><span class="token punctuation">></span></span><br>    <span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span><br><br><span class="token keyword">export</span> <span class="token keyword">default</span> MyDocument<span class="token punctuation">;</span></code></pre>
+<ol start="2">
+<li>Modify You Tailwind Config File to Create a new class name for our new font</li>
+</ol>
+<pre class="language-js"><code class="language-js"><span class="token comment">// tailwind.config.js</span><br><br>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span><br>  theme<span class="token operator">:</span> <span class="token punctuation">{</span><br>    extend<span class="token operator">:</span> <span class="token punctuation">{</span><br>      fontFamily<span class="token operator">:</span> <span class="token punctuation">{</span><br>        <span class="token string">'rubrik'</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'"Rubik Moonrocks"'</span><span class="token punctuation">,</span> <span class="token string">'cursive'</span><span class="token punctuation">]</span><br>      <span class="token punctuation">}</span><br>    <span class="token punctuation">}</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+<ol start="3">
+<li>Restart Server and You are ready with the new Classes</li>
+</ol>
+<p><img src="/img/post/font.png" alt="font-classes select tailwind"></p>
+<p>I hope you learned something new today if you did then please share this post with your friends who might find this useful aswell. Have any questions? Feel free to connect with me on&nbsp;<a href="https://linkedin.com/in/singhkunal2050">LinkedIn</a>&nbsp;<a href="https://twitter.com/singhkunal2050">Twitter</a>&nbsp;<a href="https://singhkunal2050.dev/">@singhkunal2050</a>. You can also write me&nbsp;<a href="https://singhkunal2050.dev/#contact">here</a>.</p>
+
+    </div>
+
+    <div class="blog-single-recommendations">
+
+      <h2 class=headline>Recommendations</h2>
+
+            <a href="/blog/2023-12-10-build-your-own-pinterest-style-masonry-grid-a-step-by-step-guide/" class="blog-link">
+            <div class="blog-card">
+                <h1 class="blog-title">Build Your Own Pinterest-Style Masonry Grid: A Step-by-Step Guide</h1>
+              <div class="blog-hashtags">
+                
+                
+                    
+                    <p href="#">#css</p>
+                  
+                    ,
+                    <p href="#">#web</p>
+                  
+                    ,
+                    <p href="#">#layout</p>
+                  
+              </div>
+              <p class="blog-description">Create a masonary grid layout with left to right content flow, supporting...</p>
+              
+              <div class="blog-details">
+                
+                <p class="blog-date">Dec 10, 2023</p>
+              </div>
+            </div>
+            </a>
+
+            <a href="/blog/2023-11-12-using-git-diff-and-git-apply-to-share-local-changes-with-peers/" class="blog-link">
+            <div class="blog-card">
+                <h1 class="blog-title">Using git diff and git apply to Share Local Changes with Peers</h1>
+              <div class="blog-hashtags">
+                
+                
+                    
+                    <p href="#">#git</p>
+                  
+                    ,
+                    <p href="#">#productivity</p>
+                  
+                    ,
+                    <p href="#">#software_engeneering</p>
+                  
+                    ,
+                    <p href="#">#dev</p>
+                  
+              </div>
+              <p class="blog-description">git diff and git apply are two powerful Git commands that can be used to share...</p>
+              
+              <div class="blog-details">
+                
+                <p class="blog-date">Nov 12, 2023</p>
+              </div>
+            </div>
+            </a>
+
+            <a href="/blog/2023-07-27-react-portals-render-components-outside-the-current-dom-hierarchy/" class="blog-link">
+            <div class="blog-card">
+                <h1 class="blog-title">React Portals: Render Components Outside the current DOM Hierarchy</h1>
+              <div class="blog-hashtags">
+                
+                
+                    
+                    <p href="#">#react</p>
+                  
+                    ,
+                    <p href="#">#web</p>
+                  
+              </div>
+              <p class="blog-description">The createPortal API in React allows you to render child elements into a...</p>
+              
+              <div class="blog-details">
+                
+                <p class="blog-date">Jul 27, 2023</p>
+              </div>
+            </div>
+            </a>
+
+            <a href="/blog/2023-07-19-cloning-made-easy-discover-degit-and-wave-goodbye-to-repository-headaches/" class="blog-link">
+            <div class="blog-card">
+                <h1 class="blog-title">Cloning Made Easy: Try degit and Clone Directories within Repos.</h1>
+              <div class="blog-hashtags">
+                
+                
+                    
+                    <p href="#">#git</p>
+                  
+                    ,
+                    <p href="#">#productivit</p>
+                  
+              </div>
+              <p class="blog-description">Have you ever faced the dilemma of wanting just a small portion of a repository,...</p>
+              
+              <div class="blog-details">
+                
+                <p class="blog-date">Jul 19, 2023</p>
+              </div>
+            </div>
+            </a>
+
+            <a href="/blog/2023-07-13-debugging-web-apps-with-browser-dev-tools-6-amazing-tricks/" class="blog-link">
+            <div class="blog-card">
+                <h1 class="blog-title">Debugging Web Apps with Browser Dev Tools: 6 Amazing Tricks</h1>
+              <div class="blog-hashtags">
+                
+                
+                    
+                    <p href="#">#browser</p>
+                  
+                    ,
+                    <p href="#">#debugging</p>
+                  
+                    ,
+                    <p href="#">#web</p>
+                  
+              </div>
+              <p class="blog-description">Debugging web applications can be a challenging task, with errors like...</p>
+              
+              <div class="blog-details">
+                
+                <p class="blog-date">Jul 13, 2023</p>
+              </div>
+            </div>
+            </a>
+
+            <a href="/blog/2022-11-05-controlled-versus-uncontrolled-components-in-react/" class="blog-link">
+            <div class="blog-card">
+                <h1 class="blog-title">Controlled Versus Uncontrolled Components in React</h1>
+              <div class="blog-hashtags">
+                
+                
+                    
+                    <p href="#">#react</p>
+                  
+                    ,
+                    <p href="#">#forms</p>
+                  
+              </div>
+              <p class="blog-description">Understanding State Management Within Forms Comparing controlled and...</p>
+              
+              <div class="blog-details">
+                
+                <p class="blog-date">Nov 5, 2022</p>
+              </div>
+            </div>
+            </a>
+
+            <a href="/blog/2022-09-13-format-numbers-dates-and-currencies-with-the-intl-object-in-javascript/" class="blog-link">
+            <div class="blog-card">
+                <h1 class="blog-title">Format Numbers, Dates and Currencies with the Intl Object in Javascript</h1>
+              <div class="blog-hashtags">
+                
+                
+                    
+                    <p href="#">#javascript</p>
+                  
+                    ,
+                    <p href="#">#html</p>
+                  
+                    ,
+                    <p href="#">#web</p>
+                  
+              </div>
+              <p class="blog-description">Intl object can be used to format data into commonly used formats of dates,...</p>
+              
+              <div class="blog-details">
+                
+                <p class="blog-date">Sep 13, 2022</p>
+              </div>
+            </div>
+            </a>
+
+            <a href="/blog/2022-07-23-image-masking-on-hover-using-css-clip-path-and-javascript/" class="blog-link">
+            <div class="blog-card">
+                <h1 class="blog-title">Image Masking on Hover Using CSS Clip Path and Javascript</h1>
+              <div class="blog-hashtags">
+                
+                
+                    
+                    <p href="#">#javscript</p>
+                  
+                    ,
+                    <p href="#">#css</p>
+                  
+                    ,
+                    <p href="#">#html</p>
+                  
+              </div>
+              <p class="blog-description">Image Masking can be used to add fancy hover highlight effects to images for...</p>
+              
+              <div class="blog-details">
+                
+                <p class="blog-date">Jul 23, 2022</p>
+              </div>
+            </div>
+            </a>
+
+            <a href="/blog/2022-05-21-recreating-css-tricks-fancy-grid-hover-effect/" class="blog-link">
+            <div class="blog-card">
+                <h1 class="blog-title">Recreating CSS Tricks Fancy Grid Hover Effect</h1>
+              <div class="blog-hashtags">
+                
+                
+                    
+                    <p href="#">#html</p>
+                  
+                    ,
+                    <p href="#">#css</p>
+                  
+                    ,
+                    <p href="#">#UI</p>
+                  
+                    ,
+                    <p href="#">#recreation</p>
+                  
+              </div>
+              <p class="blog-description">CSS Trick had a simple yet cool grid layout which I found dope. So lets try to...</p>
+              
+              <div class="blog-details">
+                
+                <p class="blog-date">May 21, 2022</p>
+              </div>
+            </div>
+            </a>
+
+            <a href="/blog/2022-04-16-file-explorer-recursive-react-component/" class="blog-link">
+            <div class="blog-card">
+                <h1 class="blog-title">File Explorer Recursive React Component  </h1>
+              <div class="blog-hashtags">
+                
+                
+                    
+                    <p href="#">#react</p>
+                  
+                    ,
+                    <p href="#">#javascript</p>
+                  
+                    ,
+                    <p href="#">#web</p>
+                  
+              </div>
+              <p class="blog-description">How to create a recursive folder Component using react.</p>
+              
+              <div class="blog-details">
+                
+                <p class="blog-date">Apr 16, 2022</p>
+              </div>
+            </div>
+            </a>
+
+            <a href="/blog/2022-03-06-event-delegation-in-javascript/" class="blog-link">
+            <div class="blog-card">
+                <h1 class="blog-title">Event Delegation in Javascript</h1>
+              <div class="blog-hashtags">
+                
+                
+                    
+                    <p href="#">#javscript</p>
+                  
+                    ,
+                    <p href="#">#css</p>
+                  
+                    ,
+                    <p href="#">#html</p>
+                  
+                    ,
+                    <p href="#">#web</p>
+                  
+                    ,
+                    <p href="#">#performance</p>
+                  
+              </div>
+              <p class="blog-description">Handling multiple Events in Javascript with minimal CPU Usage</p>
+              
+              <div class="blog-details">
+                
+                <p class="blog-date">Mar 6, 2022</p>
+              </div>
+            </div>
+            </a>
+
+            <a href="/blog/2021-12-23-a-simple-web-accessibility-trick-that-you-most-probably-missed/" class="blog-link">
+            <div class="blog-card">
+                <h1 class="blog-title">A Simple Web Accessibility Trick that you most probably missed!</h1>
+              <div class="blog-hashtags">
+                
+                
+                    
+                    <p href="#">#html</p>
+                  
+                    ,
+                    <p href="#">#css</p>
+                  
+                    ,
+                    <p href="#">#web-accessibility</p>
+                  
+                    ,
+                    <p href="#">#user-experience</p>
+                  
+              </div>
+              <p class="blog-description">Imagine that you cannot use the mouse and have to Navigate a Website with the...</p>
+              
+              <div class="blog-details">
+                
+                <p class="blog-date">Dec 23, 2021</p>
+              </div>
+            </div>
+            </a>
+
+            <a href="/blog/2021-11-03-top-terminal-commands-i-use-for-productivity/" class="blog-link">
+            <div class="blog-card">
+                <h1 class="blog-title">Top Terminal Commands I Use For Productivity</h1>
+              <div class="blog-hashtags">
+                
+                
+                    
+                    <p href="#">#linux</p>
+                  
+                    ,
+                    <p href="#">#cli</p>
+                  
+                    ,
+                    <p href="#">#terminal</p>
+                  
+              </div>
+              <p class="blog-description">The whole point of development is solving problems. But very often we Developers...</p>
+              
+              <div class="blog-details">
+                
+                <p class="blog-date">Nov 3, 2021</p>
+              </div>
+            </div>
+            </a>
+
+            <a href="/blog/2021-10-05-css-logical-properties/" class="blog-link">
+            <div class="blog-card">
+                <h1 class="blog-title">CSS Logical Properties </h1>
+              <div class="blog-hashtags">
+                
+                
+                    
+                    <p href="#">#css</p>
+                  
+                    ,
+                    <p href="#">#html</p>
+                  
+              </div>
+              <p class="blog-description">CSS logical properties are properties which are used to design element on the...</p>
+              
+              <div class="blog-details">
+                
+                <p class="blog-date">Oct 5, 2021</p>
+              </div>
+            </div>
+            </a>
+
+            <a href="/blog/2021-08-15-css-best-practices-in-responsive-typography/" class="blog-link">
+            <div class="blog-card">
+                <h1 class="blog-title">Fluid Typography in CSS 💧</h1>
+              <div class="blog-hashtags">
+                
+                
+                    
+                    <p href="#">#css</p>
+                  
+                    ,
+                    <p href="#">#html</p>
+                  
+                    ,
+                    <p href="#">#typography</p>
+                  
+              </div>
+              <p class="blog-description">CSS Best Practices in Fluid Typography</p>
+              
+              <div class="blog-details">
+                
+                <p class="blog-date">Aug 15, 2021</p>
+              </div>
+            </div>
+            </a>
+
+            <a href="/blog/2021-08-08-css-units-in-a-nutshell-🐚/" class="blog-link">
+            <div class="blog-card">
+                <h1 class="blog-title">CSS Units in a Nutshell 🐚</h1>
+              <div class="blog-hashtags">
+                
+                
+                    
+                    <p href="#">#css</p>
+                  
+                    ,
+                    <p href="#">#html</p>
+                  
+              </div>
+              <p class="blog-description">Are you still writing your css units in pixels and percentages? if you are then...</p>
+              
+              <div class="blog-details">
+                
+                <p class="blog-date">Aug 8, 2021</p>
+              </div>
+            </div>
+            </a>
+
+            <a href="/blog/2021-08-01-master-markdown-in-5minutes-⌚/" class="blog-link">
+            <div class="blog-card">
+                <h1 class="blog-title">Master Markdown in 5minutes ⌚</h1>
+              <div class="blog-hashtags">
+                
+                
+                    
+                    <p href="#">#markdown</p>
+                  
+                    ,
+                    <p href="#">#documentation</p>
+                  
+              </div>
+              <p class="blog-description">Markdown is a lightweight markup language for creating formatted text using a...</p>
+              
+              <div class="blog-details">
+                
+                <p class="blog-date">Aug 1, 2021</p>
+              </div>
+            </div>
+            </a>
+
+            <a href="/blog/2021-07-31-what-is-jamstack-✨/" class="blog-link">
+            <div class="blog-card">
+                <h1 class="blog-title">What is JAMStack ✨</h1>
+              <div class="blog-hashtags">
+                
+                
+                    
+                    <p href="#">#jamstack</p>
+                  
+              </div>
+              <p class="blog-description">Jamstack stands for Javascript APIS and Markup and it is based on this idea of...</p>
+              
+              <div class="blog-details">
+                
+                <p class="blog-date">Jul 31, 2021</p>
+              </div>
+            </div>
+            </a></div>
+
+  </section>
+</main>
+
+
+          <div class="latest-blog-strip-container ">
+          <span class="close-blog-strip">+</span>    
+              <a href="/blog/2023-12-10-build-your-own-pinterest-style-masonry-grid-a-step-by-step-guide/" style="display:inherit;">
+                <div style="background:url(/img/post/masonry.jfif); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                </div>
+                <div class="strip-content">
+                  <p style="font-weight: 100; font-size: .8rem; margin-bottom: 5px;">Check my latest Blog Post</p>
+                  <h2>Build Your Own Pinterest-Style Masonry Grid: A Step-by-Step Guide</h2>
+                  <a id="blog-strip-link" href="/blog/2023-12-10-build-your-own-pinterest-style-masonry-grid-a-step-by-step-guide/">Read Now</a>
+                </div>
+              </a>
+              </div>
+
+
+  
+  <div class="theme-toggler">
+  <button class="toggle-btn">
+    🎨     
+  </button>
+</div>
+<div class="theme-selector-container ">
+  <div class="close-theme-selector">+</div>
+
+  <section class="color-schemes">
+
+    <div id="default" class="theme-pallete-wrapper">
+      <div>
+        <span></span>
+        <span></span>
+      </div>
+      <button class="set-theme btn btn-primary" >Select Theme</button>
+    </div>
+
+    <div id="light-theme" class="theme-pallete-wrapper">
+      <div>
+        <span></span>
+        <span></span>
+      </div>
+    <button class="set-theme btn btn-primary">Select Theme</button>
+    </div>
+
+    <div id="monochrome-theme" class="theme-pallete-wrapper">
+      <div>
+        <span></span>
+        <span></span>
+      </div>
+    <button class="set-theme btn btn-primary">Select Theme</button>
+    </div>
+
+
+    
+
+  </section>
+
+</div>
+  
+
+<footer>
+
+  <div class="footer-content">
+
+    <p style="margin-bottom: 10px;">Made  with <span class="heart">❤</span> using <img style="display: inline-block; max-width: 1rem;" src=/img/eleventy.jpg alt="eleventy"  width="25px" > </p>
+    <p style="margin-bottom: 20px;">Copyright &copy; <span id="copyright-year">2024</span>  <a href="//linkedin.com/in/singhkunal2050" target="_blank" class="highlight">mercybirungi</a></p>
+
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/mercy-ssozi-birungi/" target="_blank">
+        
+        <svg class="social-svg-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill="white" d="M34.0819 34.0824H28.1552V24.8007C28.1552 22.5874 28.1156 19.7382 25.0727 19.7382C21.9858 19.7382 21.5134 22.1498 21.5134 24.6396V34.0818H15.5869V14.9949H21.2764V17.6034H21.3561C21.9255 16.6298 22.7483 15.8289 23.7368 15.2859C24.7254 14.7429 25.8428 14.4783 26.9698 14.5201C32.9769 14.5201 34.0844 18.4713 34.0844 23.6117L34.0819 34.0824ZM8.89937 12.386C6.99984 12.3863 5.45969 10.8467 5.45937 8.94713C5.45906 7.0476 6.99859 5.50744 8.89812 5.50713C10.7977 5.50666 12.3378 7.04635 12.3381 8.94588C12.3383 9.85807 11.9761 10.733 11.3312 11.3781C10.6863 12.0233 9.81157 12.3858 8.89937 12.386ZM11.8628 34.0826H5.92984V14.9949H11.8627V34.0824L11.8628 34.0826ZM37.0366 0.00291123H2.95172C1.34078 -0.0152138 0.0196875 1.27525 0 2.88619V37.1132C0.0190625 38.7249 1.34 40.0167 2.95156 39.9998H37.0366C38.6516 40.0198 39.9777 38.7281 40 37.1132V2.88354C39.977 1.26947 38.6508 -0.0208388 37.0366 0.000254983" fill="#850505"/>
+        </svg>
+
+      </a>
+      <a href="https://github.com/MercybirungiS" target="_blank">
+        
+       <svg class="social-svg-icon" width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path  fill="white" fill-rule="evenodd" clip-rule="evenodd" d="M20.5028 0.00177002C9.17656 0.00177002 0.00280762 9.17815 0.00280762 20.5076C0.00280762 29.5815 5.87093 37.2456 14.0197 39.9626C15.0447 40.142 15.4291 39.5268 15.4291 38.9886C15.4291 38.5016 15.4034 36.8867 15.4034 35.1693C10.2528 36.1177 8.92031 33.9134 8.51031 32.7599C8.27968 32.1704 7.28031 30.3505 6.40906 29.8635C5.69156 29.479 4.66656 28.5306 6.38343 28.5049C7.99781 28.4793 9.15093 29.9916 9.53531 30.6068C11.3803 33.7083 14.3272 32.8368 15.5059 32.2985C15.6853 30.9656 16.2234 30.0685 16.8128 29.5559C12.2516 29.0432 7.48531 27.2746 7.48531 19.4311C7.48531 17.2011 8.27968 15.3555 9.58656 13.9201C9.38156 13.4075 8.66406 11.3056 9.79156 8.48608C9.79156 8.48608 11.5084 7.9478 15.4291 10.5879C17.0691 10.1265 18.8116 9.89585 20.5541 9.89585C22.2966 9.89585 24.0391 10.1265 25.6791 10.5879C29.5997 7.92216 31.3166 8.48608 31.3166 8.48608C32.4441 11.3056 31.7266 13.4075 31.5216 13.9201C32.8284 15.3555 33.6228 17.1754 33.6228 19.4311C33.6228 27.3002 28.8309 29.0432 24.2697 29.5559C25.0128 30.1967 25.6534 31.427 25.6534 33.3494C25.6534 36.0921 25.6278 38.2965 25.6278 38.9886C25.6278 39.5268 26.0122 40.1677 27.0372 39.9626C31.1067 38.5882 34.643 35.972 37.1482 32.482C39.6535 28.992 41.0016 24.8041 41.0028 20.5076C41.0028 9.17815 31.8291 0.00177002 20.5028 0.00177002Z" fill="#850505"/>
+       </svg>
+      </a>
+      <a href="https://twitter.com/SsoziMercy" target="_blank">
+        
+      <svg class="social-svg-icon" width="38" height="81" viewBox="0 0 38 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill="white" d="M37.4226 4.02437C36.0658 4.62562 34.6081 5.03187 33.0758 5.21549C34.6569 4.26941 35.8398 2.78038 36.4038 1.02624C34.9183 1.9086 33.2925 2.52968 31.597 2.86249C30.4569 1.64515 28.9467 0.838273 27.301 0.567138C25.6553 0.296003 23.9662 0.575779 22.4958 1.36303C21.0254 2.15028 19.856 3.40096 19.1693 4.92089C18.4825 6.44082 18.3168 8.14496 18.6978 9.76874C15.6878 9.61761 12.7432 8.83526 10.0551 7.47246C7.367 6.10967 4.99551 4.19688 3.09452 1.85824C2.44452 2.97949 2.07077 4.27949 2.07077 5.66399C2.07004 6.91036 2.37697 8.13764 2.96432 9.23693C3.55167 10.3362 4.40128 11.2736 5.43777 11.9657C4.23571 11.9275 3.06018 11.6027 2.00902 11.0184V11.1159C2.00889 12.8639 2.61357 14.5582 3.72044 15.9112C4.82731 17.2642 6.36819 18.1926 8.08164 18.5389C6.96654 18.8407 5.79744 18.8851 4.66264 18.6689C5.14607 20.173 6.08776 21.4883 7.35586 22.4306C8.62397 23.373 10.155 23.8952 11.7346 23.9241C9.05312 26.0292 5.74146 27.171 2.33239 27.166C1.72851 27.1662 1.12514 27.1309 0.525391 27.0604C3.98579 29.2853 8.01394 30.4661 12.1279 30.4615C26.0541 30.4615 33.6673 18.9272 33.6673 8.92374C33.6673 8.59874 33.6591 8.27049 33.6445 7.94549C35.1254 6.87458 36.4036 5.54845 37.4194 4.02924L37.4226 4.02437Z" fill="white"/>
+      </svg>
+      </a>
+     
+     
+    </div>
+
+<p style="margin-bottom: 20px;">Have feedback? You can email me at <a href="mailto:mercyssbirungi@gmail.com" class="highlight">mercyssbirungi@gmail.com</a></p>
+
+  </div>
+
+</footer>
+
+
+</body>
+
+<!-- jq  -->
+
+<!-- slick  -->
+<!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+<!-- swal -->
+<script defer src="/js/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script defer src="/js/script.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+
+  let d = new Date;
+  document.querySelector('#copyright-year').innerText = d.getFullYear(); 
+
+</script>
+
+</html>
+  

@@ -1,0 +1,2 @@
+
+User-agent: * Allow: / Sitemap: https://singhkunal2050.dev/sitemap.xml
