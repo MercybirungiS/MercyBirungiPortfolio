@@ -1,7 +1,7 @@
 ---
 title: ArtAccess
 workUrl: https://artaccess.idi.co.ug/
-description: "A system to show case CRUD methods "
+description: "A system to show case CRU "
 tags:
   - work
   - html
