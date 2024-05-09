@@ -191,6 +191,10 @@ self.__precacheManifest = [
     "revision": "24a81c6b4a59269350112f76a4744acd"
   },
   {
+    "url": "img/akatabo.png",
+    "revision": "294da2ab15cb7a84609f0c031465038c"
+  },
+  {
     "url": "img/codepen.svg",
     "revision": "b81b362a6b01a9f230a7d030da25deb4"
   },
@@ -675,12 +679,32 @@ self.__precacheManifest = [
     "revision": "65837cd204718b870007c10188711f61"
   },
   {
+    "url": "img/work/akatabo.png",
+    "revision": "294da2ab15cb7a84609f0c031465038c"
+  },
+  {
+    "url": "img/work/artacces.png",
+    "revision": "2f9043bed4c7b8fa77b73d9bfee88c28"
+  },
+  {
     "url": "img/work/ersillia.png",
     "revision": "accfa2bf21433c2982127d90ca188b85"
   },
   {
+    "url": "img/work/image.png",
+    "revision": "2f9043bed4c7b8fa77b73d9bfee88c28"
+  },
+  {
+    "url": "img/work/keiphone.jpg",
+    "revision": "4808f9a0a5c9b32de78d2bf0ec48ab20"
+  },
+  {
     "url": "img/work/lastminuteapp.png",
     "revision": "121cc5f0e5a81acfd5fcb4ba4198d946"
+  },
+  {
+    "url": "img/work/onclock.png",
+    "revision": "0b2c043f890adda712618bbcc990b4d8"
   },
   {
     "url": "img/work/Screenshot from 2024-01-31 14-34-33.png",
@@ -696,7 +720,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "3c421f99fa5168680a96116c05f3cd17"
+    "revision": "1a069d05f584ae7f45fe68b34b68e0b6"
   },
   {
     "url": "js/script.js",
@@ -708,7 +732,7 @@ self.__precacheManifest = [
   },
   {
     "url": "projects/index.html",
-    "revision": "fcfbe1d50a793d4f751c0f557e3c57ed"
+    "revision": "60795684d6ea210b28e9a870cb4e26f5"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
