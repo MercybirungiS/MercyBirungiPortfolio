@@ -720,7 +720,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "1a069d05f584ae7f45fe68b34b68e0b6"
+    "revision": "1690c7528bb7bd38be4f998836eab349"
   },
   {
     "url": "js/script.js",
@@ -732,7 +732,7 @@ self.__precacheManifest = [
   },
   {
     "url": "projects/index.html",
-    "revision": "60795684d6ea210b28e9a870cb4e26f5"
+    "revision": "dc7174603318133e01bef0011bf8f70f"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
